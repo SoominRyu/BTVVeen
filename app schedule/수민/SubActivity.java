@@ -102,7 +102,7 @@ public class SubActivity extends AppCompatActivity { //이 클래스 이름이 S
                 new DatePickerDialog(SubActivity.this, dateSetListener, year, month, day).show();
             }
         });
-        //Time1
+        //Time1 여기!
         Button button8 = findViewById(R.id.btn8);
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,7 +120,7 @@ public class SubActivity extends AppCompatActivity { //이 클래스 이름이 S
             }
         });
 
-        //date1
+        //date1 여기!
         GregorianCalendar calendar1 = new GregorianCalendar();
         year1 = calendar1.get(Calendar.YEAR);
         month1 = calendar1.get(Calendar.MONTH);
@@ -146,6 +146,7 @@ public class SubActivity extends AppCompatActivity { //이 클래스 이름이 S
             mTxtDate.setText(String.format("%d/%d/%d", year, monthOfYear + 1, dayOfMonth));
         }
     };
+    // 여기!
     private DatePickerDialog.OnDateSetListener dateSetListener1 = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker view, int year1, int monthOfYear1,
