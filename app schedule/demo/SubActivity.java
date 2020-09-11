@@ -30,7 +30,7 @@ public class SubActivity extends AppCompatActivity { //이 클래스 이름이 S
     int sub_num=0;
     //하은코드
 
-    //예현코드
+    //예현코드 : 자리 위치 
     private EditText title;
     private EditText place;
     private EditText content;
