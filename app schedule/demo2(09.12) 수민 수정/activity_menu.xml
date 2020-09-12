@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btn_schedule"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="180dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="30dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn_med"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="305dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn_hi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="245dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn_emergency"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="370dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/menu"/>
+
+            <Button
+                android:id="@+id/btntomypage"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="435dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btntoout2"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="500dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+
