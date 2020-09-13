@@ -9,68 +9,58 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    //예현코드
     private TextView tv1;//일정제목
     private TextView tv2;//장소
     private TextView tv3;//추가 메시지
-    private TextView tv4;//날짜 //추가
+    private TextView tv4;
 
     private TextView tv1_2;//일정제목
     private TextView tv2_2;//장소
     private TextView tv3_2;//추가 메시지
-    private TextView tv4_2;//날짜 //추가
+    private TextView tv4_2;
 
     private TextView tv1_3;//일정제목
     private TextView tv2_3;//장소
     private TextView tv3_3;//추가 메시지
-    private TextView tv4_3;//날짜 //추가
+    private TextView tv4_3;
 
     private TextView ck;//추가 메시지
     int ck_main=0;
-//    String str1=null, str2=null, str3=null;
+    //    String str1=null, str2=null, str3=null;
     String title, place, content;
-    String date1, date2, date3; //추가
+    String date1, date2, date3;
     String title_2, place_2, content_2;
     String title_3, place_3, content_3;
 
-    //예현코드
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        ImageView imageView = (ImageView)findViewById(R.id.imageview);
-
-
-        // drawable에 있는 이미지를 지정합니다.
-        imageView.setImageResource(R.drawable.page1); //page1은 그림 이름이야 drawable 안에 넣어줘야 함
-
-        //예현코드
         Intent intent = getIntent();//받는다
 
         ck_main=intent.getIntExtra("ck_sub",0);//sub에서 가져온애
 
         title = intent.getStringExtra("title1");//String 데이타 받기
         place = intent.getStringExtra("place1");//String 데이타 받기
-        content = intent.getStringExtra("content1");//String 데이타 받기4
-        date1 = intent.getStringExtra("date1");//String 데이타 받기4 //추가
+        content = intent.getStringExtra("content1");//String 데이타 받기
+        date1 = intent.getStringExtra("date1");
 
         title_2 = intent.getStringExtra("title1_2");//String 데이타 받기
         place_2 = intent.getStringExtra("place1_2");//String 데이타 받기
         content_2 = intent.getStringExtra("content1_2");//String 데이타 받기
-        date2 = intent.getStringExtra("date2");//String 데이타 받기4 //추가
+        date2 = intent.getStringExtra("date2");
 
         title_3 = intent.getStringExtra("title1_3");//String 데이타 받기
         place_3 = intent.getStringExtra("place1_3");//String 데이타 받기
         content_3 = intent.getStringExtra("content1_3");//String 데이타 받기
-        date3 = intent.getStringExtra("date3");//String 데이타 받기4 //추가
-
+        date3 = intent.getStringExtra("date3");
 
 
         if(ck_main==1)
@@ -89,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
             tv4.setText(date1);//받아 온 데이터 tv4 에 넣기 //추가
 
 
+
+
         }
         else if(ck_main==2)
         {
@@ -103,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
             tv4 = findViewById(R.id.TextView_date);//tv3(메세지) //추가
             tv4.setText(date1);//받아 온 데이터 tv4 에 넣기 //추가
-/*********************************************************************************/
+
             tv1_2 = findViewById(R.id.TextView_title2);//tv1(일정제목)
             tv1_2.setText(title_2);//받아 온 데이터 tv1 에 넣기
 
@@ -115,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
             tv4_2 = findViewById(R.id.TextView_date2);//tv3(메세지) //추가
             tv4_2.setText(date2);//받아 온 데이터 tv4 에 넣기 //추가
+
         }
         else if(ck_main==3)
         {
@@ -129,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
             tv4 = findViewById(R.id.TextView_date);//tv3(메세지) //추가
             tv4.setText(date1);//받아 온 데이터 tv4 에 넣기 //추가
+
             // /*------------------------------------------------------------------------*/
             tv1_2 = findViewById(R.id.TextView_title2);//tv1(일정제목)
             tv1_2.setText(title_2);//받아 온 데이터 tv1 에 넣기
@@ -141,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
 
             tv4_2 = findViewById(R.id.TextView_date2);//tv3(메세지) //추가
             tv4_2.setText(date2);//받아 온 데이터 tv4 에 넣기 //추가
+
             /*------------------------------------------------------------------------*/
             tv1_3 = findViewById(R.id.TextView_title3);//tv1(일정제목)
             tv1_3.setText(title_3);//받아 온 데이터 tv1 에 넣기
@@ -153,7 +148,9 @@ public class MainActivity extends AppCompatActivity {
 
             tv4_3 = findViewById(R.id.TextView_date3);//tv3(메세지) //추가
             tv4_3.setText(date3);//받아 온 데이터 tv4 에 넣기 //추가
+
         }
+
 
 
         //버튼 생성(activity_main)에서 확인 가능
@@ -173,18 +170,54 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("next_content", content);
                 intent.putExtra("next_date", date1); //추가
 
+
                 intent.putExtra("next_title_2", title_2);
                 intent.putExtra("next_place_2", place_2);
                 intent.putExtra("next_content_2", content_2);
-                intent.putExtra("next_date2", date2); //추가
+                intent.putExtra("next_date", date1); //추가
+
 
                 //보내고 ->받는거 사이에 문제가 있어
                 intent.putExtra("ck_main", ck_main);
 
-               startActivity(intent);
-
+                startActivity(intent);
             }
         });
+        ImageView imageView = (ImageView)findViewById(R.id.imageview);
+
+
+        // drawable에 있는 이미지를 지정합니다.
+        imageView.setImageResource(R.drawable.page1); //page1은 그림 이름이야 drawable 안에 넣어줘야 함
+
+        Button bnt_back_main=findViewById(R.id.btn_back_main);
+        bnt_back_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //인텐트를 통해 main-sub 연결
+                Intent intent=new Intent(MainActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button bnt_menu_main=findViewById(R.id.btn_menu_main);
+        bnt_menu_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //인텐트를 통해 main-sub 연결
+                Intent intent=new Intent(MainActivity.this,MenuActivity.class);
+                startActivity(intent);
+            }
+        });
+        //Toast 메세지 : 서비스 준비 중 (수민 수정 09.12)
+        Button button44 = (Button)findViewById(R.id.btntosearch4);
+        button44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "서비스 준비 중입니다.", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
 
 
 
