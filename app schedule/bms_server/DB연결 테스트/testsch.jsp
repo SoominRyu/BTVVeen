@@ -15,7 +15,7 @@ Class.forName("org.mariadb.jdbc.Driver");
 	Connection conn=DriverManager.getConnection("jdbc:mysql://15.164.218.79:3306/test_db","root","1234");
 	Statement stmt = conn.createStatement();
 	
-	String strSQL = "select * testSchedule";
+	String strSQL = "select * from testSchedule";
 	ResultSet rs =stmt.executeQuery(strSQL);
 	
 	while(rs.next()){
