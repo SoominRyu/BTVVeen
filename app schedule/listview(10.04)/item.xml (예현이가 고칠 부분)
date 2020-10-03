@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="230dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin"
+         />
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-200dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FF0000"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-330dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#0027FF"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-330dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/tx5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-330dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin" />
+</LinearLayout>
