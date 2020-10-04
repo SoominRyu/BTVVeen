@@ -1,0 +1,25 @@
+package AES256Cipher1;
+
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import org.junit.Test;
+ 
+public class AES256CipherTest {
+ String pw = "20pi019";
+      
+ @Test public void encDesTest() throws InvalidKeyException, UnsupportedEncodingException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException{
+     AES256Cipher.getInstance();
+ 
+     AES256Cipher.AES_Encode(pw);
+
+     
+     System.out.println(AES256Cipher.AES_Encode(pw));
+
+     
+ }
+}
