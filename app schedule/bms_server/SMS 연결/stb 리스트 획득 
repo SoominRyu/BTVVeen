@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true"
+    import="java.util.*"%>
+<%@ page import="java.io.*" %>
+<%//@ page import="java.net.*"%>
+<%//@ page import = "java.net.HttpURLConnection, java.net.URL" %>
+
+<%//@ page import="net.sf.json.*" %>
+<%//@ page import = "org.json.*" %>
+
+<%@page import="org.json.simple.JSONObject"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+
+<html>
+<%
+JSONObject jsonObject = null;
+//JSONObject jsonList = new JSONObject();
+
+//out.println("너무하기싫어요");
+
+
+JSONObject jsonList = new JSONObject();
+JSONObject tempJson = new JSONObject();
+tempJson.put("gid"," ");
+
+//itemList.add(tempJson);
+
+//out.println(tempJson);
+//out.print(jsonList);
+
+
+//out.println("너무하기싫어요");
+
+
+JSONObject jsonList = new JSONObject();
+JSONObject tempJson = new JSONObject();
+tempJson.put("gid"," ");
+
+//itemList.add(tempJson);
+
+//out.println(tempJson);
+//out.print(jsonList);
+
+//URL object=new URL(); 
+//request.setAttribute("obj",tempJson);
+%>
+<script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+        var test= {        "token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6InBybzEyMzQiLCJleHAiOjE2MDIxNjc5MTJ9.9p-JhB1wnfuT_xilk5g7npDQeIm-0gRU3s7p_DyGxno",   
+        "gid":""}
+
+$.ajax({ 
+        type : "POST", 
+        url : "http://222.236.32.68:6068/getSettopListAPI",
+        dataType : 'json', 
+        contentType : 'application/json',
+        data : JSON.stringify(test),
+        success : successCall,
+        error   : errorCall    
+        }).done(function (response) {
+                console.log(response);
+        });
+        function successCall(){
+            alert("전송성공");
+        }
+        function errorCall(){
+            alert("전송실패");
+        }
+</script>
+
+</html>
