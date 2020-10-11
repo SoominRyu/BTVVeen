@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true"
+    import="java.util.*"%>
+<%@ page import="java.io.*" %>
+<%@page import="org.json.simple.JSONObject"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+
+<html>
+<body>
+<%
+//JSONObject jsonObject = null;
+JSONObject obj = new JSONObject();
+//obj.put("id", "test1234");
+//out.println(obj);
+//out.println("너무하기싫어요");
+
+%>
+
+
+<form id="test" action="test_ajax_get.jsp" method="post" name="test">
+                        <input type="hidden" name="id" value="qqqqqqtest">
+                                                         </form>
+<script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+/*
+        var test= {
+        "id1":"test1234"}
+
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("get","test_ajax_get.jsp?id=test1234",true);
+        xmlhttp.send();
+
+
+*/
+//      var id="test1234";
+/*      var setresult;
+        var settoken;
+//      String test="잘 전달이 되었다";
+//$
+jQuery.ajax({ 
+        type : "POST", 
+        url : "http://15.164.218.79:8080/test_table/test_ajax_get.jsp",//?id="+"test1234",
+        dataType :"text", //"json", //String 
+//      contentType :'application/json',
+        data :{"id": "test99"},//JSON.stringify(test),// {"test":"test1234"},
+//      async: false,
+//      processData: false, 
+        //contentType: false, 
+        success : successCall,
+        error   : errorCall    
+        });/*.done(function (response) {
+                console.log(response);
+                setresult = response['result'];
+                settoken = response['token'];
+                document.write(setresult+'\n');
+        
+        });*/
+/*      function successCall(){
+            alert("전송성공");
+        }
+        function errorCall(){
+            alert("전송실패");
+        
+        }
+//        document.write(test['id']);
+
+//      var id="test1234"
+/*      
+        <form id="test" action="test_ajax_get.jsp" method="get" name="test">
+                <input type="hidden" name="id" value="test123">
+         </form>*/
+document.test.submit();
+
+</script>
+</body>
+</html>
+
