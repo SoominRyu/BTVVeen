@@ -1,0 +1,103 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8" %>
+<%//@ page language="java" contentType="application/json; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.io.*" %>
+
+<%//@ page import="java.net.*"%>
+<%//@ page import = "java.net.HttpURLConnection, java.net.URL" %>
+
+<%//@ page import="net.sf.json.*" %>
+<%//@ page import = "org.json.*" %>
+
+<%@page import="org.json.simple.JSONObject"%>
+
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<%
+//String str= request.getParameter("id");//JsonKeyInfo.PARAM_KEY_JSON);
+Object str2= request.getParameter("id");
+
+//String str1 = (String) request.getAttribute("id");
+// Map parameterMap = request.getParameterMap();
+// String[] str2 = (String[])parameterMap.get("id");
+/*String method = request.getMethod();
+if ("GET".equals(method)){
+   out.println("can't access!");
+} else {
+      String inpt = request.getParameter("id");
+         out.println(inpt);
+         }
+*/
+//out.println(str);//+str2);
+out.println(str2);
+
+//System.out.println(str1);
+
+<%
+//String str= request.getParameter("id");//JsonKeyInfo.PARAM_KEY_JSON);
+Object str2= request.getParameter("id");
+
+//String str1 = (String) request.getAttribute("id");
+// Map parameterMap = request.getParameterMap();
+// String[] str2 = (String[])parameterMap.get("id");
+/*String method = request.getMethod();
+if ("GET".equals(method)){
+   out.println("can't access!");
+} else {
+      String inpt = request.getParameter("id");
+         out.println(inpt);
+         }
+*/
+//out.println(str);//+str2);
+out.println(str2);
+
+//System.out.println(str1);
+%>
+<%=request.getParameter("id") %>
+<script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+        /*var test= {
+        "id":"pro1234",   
+        "pw":"DQBmduJSjYsBc+L1hwpXSQ=="}
+
+        var setresult;
+        var settoken;
+*/
+//      String str1 = request.getParameter("id");
+//      document.write(str1);
+/*
+$.ajax({ 
+        type : "POST", 
+        url : "test_ajax_get.jsp",
+//      dataType : 'json', 
+//      contentType : 'application/json',
+//      data : JSON.stringify(test),
+//      async:false, 
+        success : successCall,
+        error   : errorCall    
+        }).done(function (response) {
+                console.log(response);
+                //setresult = response['result'];
+                //settoken = response['token'];
+                //document.write(setresult+'\n');
+                //document.write(settoken+'\n');
+                
+                
+
+//      result=response;
+//      console.log(result);
+//      alert(result);
+        });
+        function successCall(){
+            alert("전송성공");
+        }
+        function errorCall(){
+            alert("전송실패");
+        }
+*/      
+</script>
