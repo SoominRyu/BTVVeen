@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true"
+    import="java.util.*"%>
+
+
+<%@ page import="java.io.*" %>
+<%@page import="org.json.simple.JSONObject"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+
+<html>
+<body>
+
+<form id="test" action="test_ajax_get.jsp" method="post" name="test">
+                        <input type="hidden" name="id" value="">
+                                                         </form>
+<script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+       crossorigin="anonymous"></script>
+
+<script type="text/javascrip">
+
+          test_id="1111222"
+//document.test.id.value=test_id;
+   document.test.id.value=test_id;
+document.test.submit();
+//var test_form = document.test;
+//   test_form.id.value=test_id;
+//document.getElementById("test")=test_id;
+</script>
+
+<script type="text/javascript">
+//document.test.submit();
+</script>
+
+</body>
+</html>
