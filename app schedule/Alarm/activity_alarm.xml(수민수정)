@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//수민코드(08.31)-로딩화면-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/alarm"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="285dp"
+                android:layout_marginTop="60dp"
+                android:background="#00FF0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="460dp"
+                android:background="#00FF0000"
+                android:text=" " />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="200dp"
+                android:timePickerMode="spinner" />
+
+
+
+
+
+        </FrameLayout>
+    </ScrollView>
+
+
+</FrameLayout>
+
+
