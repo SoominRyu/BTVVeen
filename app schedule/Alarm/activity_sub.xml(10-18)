@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/page2" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="450dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+
+            <!-- 날짜 설정 버튼-->
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="230dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <!-- 시간 설정 버튼-->
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="225dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <!-- 날짜 설정 버튼-->
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="280dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <!-- 시간 설정 버튼-->
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="280dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <!-- back(수민 수정0912)-->
+            <Button
+                android:id="@+id/btn_back_sub"
+                android:layout_width="35dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <!-- 수민 코드 08.31 -->
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="335dp"
+                android:checked="false"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:textOff="Off"
+                android:textOn="On" />
+
+            <EditText
+                android:id="@+id/Edit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="180sp"
+                android:ems="10"
+                android:hint="일정 제목"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Edit_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="590dp"
+                android:ems="10"
+                android:hint="내용을 입력하세요"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Edit_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="388dp"
+                android:ems="10"
+                android:hint="장소 입력"
+                android:inputType="textPersonName" />
+
+            <!-- 날짜 -->
+            <EditText
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="230sp"
+                android:hint="시작 날짜 선택"
+                android:textSize="20sp" />
+
+            <!-- 시간 -->
+            <EditText
+                android:id="@+id/txttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="230dp"
+                android:hint="시작 시간"
+                android:textSize="20sp" />
+
+            <!-- 날짜 -->
+            <EditText
+                android:id="@+id/txtdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="280dp"
+                android:hint="종료 날짜 선택"
+                android:textSize="20sp" />
+
+            <!-- 시간 -->
+            <EditText
+                android:id="@+id/txttime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="280dp"
+                android:hint="종료 시간"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="450dp"
+                android:hint="시간 입력!"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+            <!--    처음 시작은 한 줄이고 5줄까지만 커지고, 그 다음줄부터 스크롤링됨.-->
+            <Button
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250sp"
+                android:layout_marginTop="732sp"
+                android:background="#00ff0000"
+                android:onClick="clickGet" />
+
+            <!--이 버튼이 찐 찐 찐 찐 찐이야 btn4 지워주고-->
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145sp"
+                android:layout_marginTop="732sp"
+                android:background="#00ff0000"
+                android:onClick="clickPost" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>
