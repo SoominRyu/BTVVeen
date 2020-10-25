@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--//수민코드(08.31)-로딩화면-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/alarm"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="285dp"
+                android:layout_marginTop="60dp"
+                android:background="#00FF0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="20dp"
+                android:background="#00FF0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="140dp"
+                android:background="#00FF0000"
+                android:text=" " />
+
+            <Button
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130sp"
+                android:layout_marginTop="470dp"
+                android:background="#00ff0000"
+                android:onClick="clickPost" />
+
+
+            <TextView
+                android:id="@+id/textViewTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="290dp"
+                android:textColor="#ffffff"
+                android:textSize="60dp" />
+
+            <TextView
+                android:id="@+id/textViewTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="290dp"
+                android:textSize="60dp"
+                android:textColor="#000000"/>
+
+
+
+
+        </FrameLayout>
+    </ScrollView>
+
+
+</FrameLayout>
+
+
