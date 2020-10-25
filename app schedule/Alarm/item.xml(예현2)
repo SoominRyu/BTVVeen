@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="230dp"
+        android:layout_marginTop="-18dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="16dp"
+        android:textColor="#E0844F"/>
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="195dp"
+        android:layout_marginTop="-25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-260dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FF0000"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-360dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#0027FF"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/tx4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-190dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="11dp"/>
+
+    <TextView
+        android:id="@+id/tx5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-350dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textColor="#000000"/>
+
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-200dp"
+        android:layout_marginTop="58dp"
+        android:text="장소:"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="165dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="-250dp"
+        android:layout_marginTop="78dp"
+        android:layout_weight="1"
+        android:src="@drawable/location" />
+
+
+
+
+
+
+</LinearLayout>
