@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <Button
+        android:id="@+id/btn_menu_med"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="35dp"
+        android:background="#00ff0000"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btn_back_med"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:background="#00ff0000"
+        android:text=" " />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pagemed"/>
+
+
+            <TextView
+                android:id="@+id/med_Alarm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="143dp"
+                android:textSize="11dp"/>
+
+
+
+            <EditText
+                android:id="@+id/Edit_medmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="438dp"
+                android:ems="10"
+                android:hint="내용을 입력하세요"
+                android:inputType="textPersonName" />
+
+            <!-- 날짜 -->
+            <EditText
+                android:id="@+id/medtxttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="383sp"
+                android:hint="시간 선택"
+                android:textSize="15sp" />
+            <!-- 날짜 설정 버튼-->
+            <Button
+                android:id="@+id/btn35"
+                android:layout_width="106dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="385dp"
+                android:background="#00ff0000"
+                android:text=" " />
+            <!-- 시간 -->
+            <EditText
+                android:id="@+id/medtxtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="330dp"
+                android:hint="날짜 선택"
+                android:textSize="15sp" />
+            <!-- 시간 설정 버튼-->
+            <Button
+                android:id="@+id/btn36"
+                android:layout_width="298dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="330dp"
+                android:background="#00ff0000"
+                android:text=" " />
+            <!-- 날짜 -->
+            <EditText
+                android:id="@+id/medtxtalaram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="205sp"
+                android:layout_marginTop="383sp"
+                android:hint="               "
+                android:textSize="12sp" />
+            <!-- 날짜 설정 버튼-->
+            <Button
+                android:id="@+id/btn37"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="385dp"
+                android:background="#00ff0000"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btn_medok"
+                android:layout_width="66dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="540dp"
+                android:background="#00ff0000"
+                android:onClick="clickOk"
+                android:text=" " />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="114dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="370dp"
+                android:spinnerMode="dialog"
+                android:splitMotionEvents="false"
+                android:textSize="3sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/med_Content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="160dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/med_Time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="160dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/med_Date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="140dp"
+                android:textColor="#FF7E7E" />
+
+
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>
