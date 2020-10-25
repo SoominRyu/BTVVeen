@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">BTVVeen</string>
+    <string-array name="numbers">
+        <item> 0 </item>
+        <item> 5 </item>
+        <item> 10 </item>
+        <item> 15 </item>
+        <item> 20 </item>
+        <item> 25 </item>
+        <item> 30 </item>
+        <item> 35 </item>
+        <item> 40 </item>
+        <item> 45 </item>
+        <item> 50 </item>
+        <item> 55 </item>
+        <item> 60 </item>
+    </string-array>
+    <string-array name="numbers2">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+        <item> 16 </item>
+        <item> 17 </item>
+        <item> 18 </item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 24 </item>
+    </string-array>
+    <string-array name="numbers3">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+        <item> 16 </item>
+        <item> 17 </item>
+        <item> 18 </item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 24 </item>
+        <item> 25 </item>
+        <item> 26 </item>
+        <item> 27 </item>
+        <item> 28 </item>
+        <item> 29 </item>
+        <item> 30 </item>
+    </string-array>
+    <string-array name="numbers4">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+    </string-array>
+    <string-array name="numbers5">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+    </string-array>
+    <string-array name="numbers6">
+        <item> 없음 </item>
+        <item> 1일 </item>
+        <item> 2일 </item>
+        <item> 3일 </item>
+        <item> 7일 </item>
+        <item> 1달 </item>
+        <item> 매일 </item>
+    </string-array>
+</resources>
